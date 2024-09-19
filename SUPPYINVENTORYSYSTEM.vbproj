@@ -1,0 +1,496 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A9A5C4BD-D4C9-45A5-BFC0-E684DCDA6E67}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>SUPPYINVENTORYSYSTEM.My.MyApplication</StartupObject>
+    <RootNamespace>SUPPYINVENTORYSYSTEM</RootNamespace>
+    <AssemblyName>SUPPYINVENTORYSYSTEM</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>SUPPYINVENTORYSYSTEM.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>SUPPYINVENTORYSYSTEM.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v16.1, Version=16.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v16.1.Core, Version=16.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v16.1, Version=16.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v16.1, Version=16.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v16.1, Version=16.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v16.1, Version=16.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraNavBar.v16.1, Version=16.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v16.1, Version=16.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraScheduler.v16.1, Version=16.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v16.1.Core, Version=16.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Borrow.Designer.vb">
+      <DependentUpon>Borrow.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Borrow.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Database1DataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Database1DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Database1DataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Database1DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Database1DataSet2.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Database1DataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Release.Designer.vb">
+      <DependentUpon>Release.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Release.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReleaseSearch.Designer.vb">
+      <DependentUpon>ReleaseSearch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReleaseSearch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="loginform.Designer.vb">
+      <DependentUpon>loginform.vb</DependentUpon>
+    </Compile>
+    <Compile Include="loginform.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mainform.Designer.vb">
+      <DependentUpon>Mainform.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mainform.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Returning.Designer.vb">
+      <DependentUpon>Returning.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Returning.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReturnSearch.Designer.vb">
+      <DependentUpon>ReturnSearch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReturnSearch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BorrowSearch.Designer.vb">
+      <DependentUpon>BorrowSearch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BorrowSearch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BorrowNew.Designer.vb">
+      <DependentUpon>BorrowNew.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BorrowNew.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BorrowEdit.Designer.vb">
+      <DependentUpon>BorrowEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BorrowEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReleaseNew.Designer.vb">
+      <DependentUpon>ReleaseNew.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReleaseNew.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InventoryNew.Designer.vb">
+      <DependentUpon>InventoryNew.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InventoryNew.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InventoryEdit.Designer.vb">
+      <DependentUpon>InventoryEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InventoryEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventoryy.Designer.vb">
+      <DependentUpon>Inventoryy.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Inventoryy.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReleaseEdit.Designer.vb">
+      <DependentUpon>ReleaseEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReleaseEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InventorySearch.Designer.vb">
+      <DependentUpon>InventorySearch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InventorySearch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserAccount.Designer.vb">
+      <DependentUpon>UserAccount.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserAccount.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReleaseItem.Designer.vb">
+      <DependentUpon>ReleaseItem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReleaseItem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="`.Designer.vb">
+      <DependentUpon>`.vb</DependentUpon>
+    </Compile>
+    <Compile Include="`.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Restockinventory.Designer.vb">
+      <DependentUpon>Restockinventory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Restockinventory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BorrowedItems.Designer.vb">
+      <DependentUpon>BorrowedItems.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BorrowedItems.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BorrowersAccount.Designer.vb">
+      <DependentUpon>BorrowersAccount.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BorrowersAccount.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="outofstock.Designer.vb">
+      <DependentUpon>outofstock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="outofstock.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Itemstobereturn.Designer.vb">
+      <DependentUpon>Itemstobereturn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Itemstobereturn.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Suppliers.Designer.vb">
+      <DependentUpon>Suppliers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Suppliers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SuppliersAccount.Designer.vb">
+      <DependentUpon>SuppliersAccount.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SuppliersAccount.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Borrow.resx">
+      <DependentUpon>Borrow.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BorrowEdit.resx">
+      <DependentUpon>BorrowEdit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BorrowNew.resx">
+      <DependentUpon>BorrowNew.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InventoryEdit.resx">
+      <DependentUpon>InventoryEdit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InventoryNew.resx">
+      <DependentUpon>InventoryNew.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InventorySearch.resx">
+      <DependentUpon>InventorySearch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventoryy.resx">
+      <DependentUpon>Inventoryy.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Release.resx">
+      <DependentUpon>Release.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReleaseEdit.resx">
+      <DependentUpon>ReleaseEdit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReleaseItem.resx">
+      <DependentUpon>ReleaseItem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReleaseNew.resx">
+      <DependentUpon>ReleaseNew.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReleaseSearch.resx">
+      <DependentUpon>ReleaseSearch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loginform.resx">
+      <DependentUpon>loginform.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mainform.resx">
+      <DependentUpon>Mainform.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Returning.resx">
+      <DependentUpon>Returning.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReturnSearch.resx">
+      <DependentUpon>ReturnSearch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BorrowSearch.resx">
+      <DependentUpon>BorrowSearch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Suppliers.resx">
+      <DependentUpon>Suppliers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SuppliersAccount.resx">
+      <DependentUpon>SuppliersAccount.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserAccount.resx">
+      <DependentUpon>UserAccount.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Restockinventory.resx">
+      <DependentUpon>Restockinventory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BorrowedItems.resx">
+      <DependentUpon>BorrowedItems.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BorrowersAccount.resx">
+      <DependentUpon>BorrowersAccount.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="outofstock.resx">
+      <DependentUpon>outofstock.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Itemstobereturn.resx">
+      <DependentUpon>Itemstobereturn.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Database1DataSet.xsc">
+      <DependentUpon>Database1DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Database1DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Database1DataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Database1DataSet.xss">
+      <DependentUpon>Database1DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Database1DataSet1.xsc">
+      <DependentUpon>Database1DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Database1DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Database1DataSet1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Database1DataSet1.xss">
+      <DependentUpon>Database1DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Database1DataSet2.xsc">
+      <DependentUpon>Database1DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Database1DataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Database1DataSet2.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Database1DataSet2.xss">
+      <DependentUpon>Database1DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LOGIN FORMM.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UPPER DOCKK.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OOSI.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ITBR.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DI.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ID.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Database1.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Database1_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>Database1.mdf</DependentUpon>
+    </Content>
+    <None Include="Resources\saveto_32x321.png" />
+    <None Include="Resources\up_32x32.png" />
+    <None Include="Resources\backward_32x32.png" />
+    <None Include="Resources\saveto_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Sql.Server.Express.10.0">
+      <Visible>False</Visible>
+      <ProductName>SQL Server 2008 Express</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
